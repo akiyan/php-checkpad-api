@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0" packagerversion="1.4.8">
+ <name>Services_CheckPad</name>
+ <summary>Client for the www.checkpad.jp web service.</summary>
+ <description>Services_CheckPad is a client for the web service of www.checkpad.jp.
+ </description>
+ <maintainers>
+  <maintainer>
+   <user>akiyan</user>
+   <name>akiyan</name>
+   <email>akiyan.com@gmail.com</email>
+   <role>lead</role>
+  </maintainer>
+ </maintainers>
+ <release>
+  <version>0.1.0</version>
+  <date>2006-03-20</date>
+  <license>PHP License</license>
+  <state>alpha</state>
+  <notes>Initial release
+  </notes>
+  <deps>
+   <dep type="php" rel="ge" version="4.3.0" optional="no"/>
+   <dep type="pkg" rel="ge" version="1.4.11" optional="no">PEAR</dep>
+   <dep type="pkg" rel="ge" version="1.1.0" optional="no">HTTP_Client</dep>
+  </deps>
+  <provides type="class" name="Services_CheckPad" />
+  <provides type="function" name="Services_CheckPad::login" />
+  <provides type="function" name="Services_CheckPad::getListOfToDo" />
+  <provides type="function" name="Services_CheckPad::addListOfToDo" />
+  <provides type="function" name="Services_CheckPad::delListOfToDo" />
+  <provides type="function" name="Services_CheckPad::editListOfToDoTitle" />
+  <provides type="function" name="Services_CheckPad::editListOfToDoMemo" />
+  <provides type="function" name="Services_CheckPad::getToDoList" />
+  <provides type="function" name="Services_CheckPad::getToDoListURL" />
+  <provides type="function" name="Services_CheckPad::getToDoListNotYet" />
+  <provides type="function" name="Services_CheckPad::getToDoListDone" />
+  <provides type="function" name="Services_CheckPad::addToDo" />
+  <provides type="function" name="Services_CheckPad::editToDo" />
+  <provides type="function" name="Services_CheckPad::finishToDo" />
+  <provides type="function" name="Services_CheckPad::unfinishToDo" />
+  <provides type="function" name="Services_CheckPad::delNotYetToDo" />
+  <provides type="function" name="Services_CheckPad::delDoneToDo" />
+  <filelist>
+   <file role="php" baseinstalldir="Services" md5sum="8aceccaec45e96a1c630dbaff2f293b3" name="CheckPad.php"/>
+  </filelist>
+ </release>
+ <changelog>
+   <release>
+    <version>0.1.0</version>
+    <date>2006-12-29</date>
+    <license>PHP License</license>
+    <state>alpha</state>
+    <notes>Initial release
+    </notes>
+   </release>
+ </changelog>
+</package>
